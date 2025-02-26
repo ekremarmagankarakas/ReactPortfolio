@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "../App.css";
 
 const ProjectsPage = () => {
@@ -109,9 +110,28 @@ const ProjectsPage = () => {
   };
 
   return (
-    <div className="projects-container-no-margin">
-      <div className="projects-grid">
-        {projects.map((project) => (
+    <div className="projects-page">
+      <div className="projects-container">
+        <motion.div 
+          className="projects-header"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h1 className="projects-heading">My Projects</h1>
+          <div className="projects-divider"></div>
+          <p className="projects-subheading">
+            A collection of my work, side projects, and coding experiments.
+          </p>
+        </motion.div>
+        
+        <motion.div 
+          className="projects-grid"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          {projects.map((project, index) => (
           <div 
             key={project.id} 
             className={`project-card ${getSizeClass(project.size)}`}
@@ -139,6 +159,7 @@ const ProjectsPage = () => {
             </div>
           </div>
         ))}
+      </motion.div>
       </div>
     </div>
   );

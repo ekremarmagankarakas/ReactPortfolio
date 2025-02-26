@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import '../App.css';
 
 // Company logo icons/emojis
@@ -60,17 +61,33 @@ const ExperiencePage = () => {
   return (
     <div className="experience-page">
       <div className="experience-container">
-        <div className="experience-header">
+        <motion.div 
+          className="experience-header"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <h1 className="experience-heading">Professional Journey</h1>
           <div className="experience-divider"></div>
           <p className="experience-subheading">
             A timeline of my career path and the skills I've developed along the way.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="experience-timeline">
+        <motion.div 
+          className="experience-timeline"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           {experiences.map((exp, index) => (
-            <div key={index} className="experience-item">
+            <motion.div 
+              key={index} 
+              className="experience-item"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.15 * (index + 1) }}
+            >
               <div 
                 className="experience-logo-container"
                 style={{ 
@@ -123,9 +140,9 @@ const ExperiencePage = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import '../App.css';
 
 // Icons mapping for skills
@@ -90,24 +91,53 @@ const SkillsPage = () => {
   ];
   
   return (
-    <div className="skills-container">
-      <h2 className="skills-title">
-        My Skills
-      </h2>
+    <div className="skills-page">
+      <div className="skills-container">
+        <motion.div 
+          className="skills-header"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h1 className="skills-heading">Technical Expertise</h1>
+          <div className="skills-divider"></div>
+          <p className="skills-subheading">
+            A comprehensive overview of my technical abilities and proficiency levels.
+          </p>
+        </motion.div>
 
-      <div className="skills-grid">
-        {skillCategories.map((category) => (
-          <div 
+        <motion.div 
+          className="skills-grid"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+        {skillCategories.map((category, index) => (
+          <motion.div 
             key={category.category} 
             className="skills-card"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 * (index + 1) }}
           >
-            <div className="skills-card-header">
+            <motion.div 
+              className="skills-card-header"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.1 * (index + 1) }}
+            >
               <span className="category-icon">{category.icon}</span>
               <h3 className="skills-category">{category.category}</h3>
-            </div>
-            <div className="skills-list">
-              {category.skills.map((skill) => (
-                <div key={skill.name} className="skill-item">
+            </motion.div>
+            <motion.div className="skills-list">
+              {category.skills.map((skill, skillIndex) => (
+                <motion.div 
+                  key={skill.name} 
+                  className="skill-item"
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.1 * (index + 1) + 0.05 * skillIndex }}
+                >
                   <div className="skill-info">
                     <div className="skill-name">
                       <span className="skill-icon">{skillIcons[skill.name] || '🔹'}</span>
@@ -116,19 +146,22 @@ const SkillsPage = () => {
                     <span className="skill-percentage">{skill.level}%</span>
                   </div>
                   <div className="skill-bar">
-                    <div 
+                    <motion.div 
                       className="skill-progress" 
                       style={{
-                        width: `${skill.level}%`,
                         background: `linear-gradient(90deg, #3b82f6 0%, #60a5fa ${skill.level}%)`,
                       }}
+                      initial={{ width: 0 }}
+                      animate={{ width: `${skill.level}%` }}
+                      transition={{ duration: 0.6, delay: 0.1 * (index + 1) + 0.05 * skillIndex + 0.2 }}
                     />
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         ))}
+      </motion.div>
       </div>
     </div>
   );
