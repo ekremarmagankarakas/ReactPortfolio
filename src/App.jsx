@@ -13,9 +13,9 @@ export const NavigationContext = createContext();
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [darkMode, setDarkMode] = useState(() => {
-    // Initialize from localStorage or default to false
+    // Initialize from localStorage or default to true
     const savedTheme = localStorage.getItem('darkMode');
-    return savedTheme ? JSON.parse(savedTheme) : false;
+    return savedTheme ? JSON.parse(savedTheme) : true;
   });
 
   // Update body class and localStorage when theme changes
