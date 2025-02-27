@@ -17,17 +17,13 @@ const ProjectsPage = () => {
       name: "Machine Learning",
       color: "#10B981" // Green
     },
-    "game": {
-      name: "Game Development",
-      color: "#F59E0B" // Amber
-    },
-    "mobile": {
-      name: "Mobile Apps",
-      color: "#EC4899" // Pink
-    },
-    "hardware": {
-      name: "Hardware",
+    "robotics": {
+      name: "Robotics",
       color: "#8B5CF6" // Purple
+    },
+    "other": {
+      name: "Other",
+      color: "#EC4899" // Pink
     }
   };
 
@@ -48,7 +44,7 @@ const ProjectsPage = () => {
       description:
         "Designed machine learning pipeline for movie success prediction using Random Forest & Gradient Boosting (94.86% accuracy, F1-score: 0.89). Applied SMOTE for class balancing & conducted EDA with matplotlib/seaborn.",
       tags: ["Python", "Machine Learning", "Data Science"],
-      size: "lg",
+      size: "md",
       accentColor: "#10B981",
       category: "ml"
     },
@@ -69,8 +65,8 @@ const ProjectsPage = () => {
         "Engineered a hexagonal-grid based Reversi game model in Java, adhering to standard two-player rules with variable grid size capabilities. Implemented model-view-controller architecture.",
       tags: ["Java", "Unit Testing", "MVC Architecture"],
       size: "md",
-      accentColor: "#F59E0B",
-      category: "game"
+      accentColor: "#EC4899",
+      category: "other"
     },
     {
       id: 5,
@@ -79,8 +75,8 @@ const ProjectsPage = () => {
         "Interviewed 11 leaders, wrote and published a book, used sales revenue to donate medical devices and tablets, and received media coverage, including Hurriyet.",
       tags: ["Writing", "Community Impact", "Leadership"],
       size: "md",
-      accentColor: "#3B82F6",
-      category: "web"
+      accentColor: "#EC4899",
+      category: "other"
     },
     {
       id: 6,
@@ -90,7 +86,7 @@ const ProjectsPage = () => {
       tags: ["Arduino", "Security", "Robotics", "Electronics"],
       size: "lg",
       accentColor: "#8B5CF6",
-      category: "hardware"
+      category: "robotics"
     },
     {
       id: 7,
@@ -100,7 +96,7 @@ const ProjectsPage = () => {
       tags: ["PowerShell", "WPF", "Windows", "Automation"],
       size: "md",
       accentColor: "#EC4899",
-      category: "mobile"
+      category: "other"
     },
     {
       id: 8,
