@@ -7,7 +7,7 @@ const HomePage = () => {
   const { setActiveSection } = useContext(NavigationContext);
   const [typedText, setTypedText] = useState("");
   const fullText = "Software Developer | Artificial Intelligence Engineer";
-  const typingSpeed = 80; // milliseconds per character
+  const typingSpeed = 40; // milliseconds per character
   
   // Typewriter effect for the subtitle
   useEffect(() => {
@@ -26,8 +26,8 @@ const HomePage = () => {
     visible: { 
       opacity: 1,
       transition: { 
-        delayChildren: 0.3,
-        staggerChildren: 0.2
+        delayChildren: 0.1,
+        staggerChildren: 0.1
       }
     }
   };
@@ -37,7 +37,7 @@ const HomePage = () => {
     visible: { 
       y: 0, 
       opacity: 1,
-      transition: { duration: 0.5 }
+      transition: { duration: 0.3 }
     }
   };
 

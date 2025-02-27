@@ -97,9 +97,9 @@ html, body, #root, .app-container {
   --radius-full: 9999px;
   
   /* Transitions */
-  --transition-fast: 0.2s ease;
-  --transition-medium: 0.3s ease;
-  --transition-slow: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --transition-fast: 0.15s ease;
+  --transition-medium: 0.2s ease;
+  --transition-slow: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   
   /* z-index levels */
   --z-dock: 50;
@@ -156,7 +156,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .app-container {
@@ -490,7 +490,7 @@ body {
   font-weight: 600;
   font-size: var(--font-sm);
   text-decoration: none;
-  transition: all var(--transition-medium);
+  transition: all var(--transition-fast);
   position: relative;
   overflow: hidden;
   z-index: 1;
