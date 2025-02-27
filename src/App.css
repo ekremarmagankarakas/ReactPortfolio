@@ -926,11 +926,6 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
-.category-filter:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
 .category-filter.active {
   font-weight: 600;
 }
