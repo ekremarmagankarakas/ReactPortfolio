@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { motion } from "framer-motion";
+import resumePDF from "../assets/EkremKarakasResume.pdf";
+import { NavigationContext } from "../App";
 
 const HomePage = () => {
+  const { setActiveSection } = useContext(NavigationContext);
   const [typedText, setTypedText] = useState("");
   const fullText = "Software Developer | Artificial Intelligence Engineer";
   const typingSpeed = 80; // milliseconds per character
@@ -81,8 +84,8 @@ const HomePage = () => {
         </motion.p>
         
         <motion.div className="cta-buttons" variants={itemVariants}>
-          <a href="#contact" className="cta-button primary">Get in Touch</a>
-          <a href="#projects" className="cta-button secondary">View Projects</a>
+          <a onClick={() => setActiveSection('experience')} className="cta-button primary" style={{cursor: 'pointer'}}>View Experiences</a>
+          <a onClick={() => setActiveSection('projects')} className="cta-button secondary" style={{cursor: 'pointer'}}>View Projects</a>
         </motion.div>
         
         <motion.div className="social-icons" variants={itemVariants}>
@@ -112,9 +115,8 @@ const HomePage = () => {
             <span className="fa fa-envelope"></span>
           </a>
           <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={resumePDF}
+            download="EkremKarakasResume.pdf"
             className="social-icon-link"
             aria-label="Resume"
           >
@@ -122,21 +124,6 @@ const HomePage = () => {
           </a>
         </motion.div>
         
-        <motion.div 
-          className="scroll-indicator"
-          animate={{ 
-            y: [0, 10, 0],
-            opacity: [0.2, 1, 0.2],
-          }}
-          transition={{ 
-            repeat: Infinity,
-            duration: 1.5
-          }}
-          variants={itemVariants}
-        >
-          <span className="fa fa-chevron-down"></span>
-          <p>Scroll to explore</p>
-        </motion.div>
       </motion.div>
     </div>
   );

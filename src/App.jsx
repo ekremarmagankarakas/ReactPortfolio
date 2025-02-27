@@ -8,6 +8,7 @@ import SkillsPage from './pages/SkillsPage';
 import ExperiencePage from './pages/ExperiencePage';
 
 export const ThemeContext = createContext();
+export const NavigationContext = createContext();
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -33,20 +34,22 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
-      <div className="app-container">
-        <AnimatedBackground />
+      <NavigationContext.Provider value={{ setActiveSection }}>
+        <div className="app-container">
+          <AnimatedBackground />
 
-        <div className="content-wrapper">
-          <div className="page-container">
-            {activeSection === 'home' && <HomePage />}
-            {activeSection === 'projects' && <ProjectsPage />}
-            {activeSection === 'skills' && <SkillsPage />}
-            {activeSection === 'experience' && <ExperiencePage />}
+          <div className="content-wrapper">
+            <div className="page-container">
+              {activeSection === 'home' && <HomePage />}
+              {activeSection === 'projects' && <ProjectsPage />}
+              {activeSection === 'skills' && <SkillsPage />}
+              {activeSection === 'experience' && <ExperiencePage />}
+            </div>
+
+            <Dock activeSection={activeSection} setActiveSection={setActiveSection} />
           </div>
-
-          <Dock activeSection={activeSection} setActiveSection={setActiveSection} />
         </div>
-      </div>
+      </NavigationContext.Provider>
     </ThemeContext.Provider>
   );
 };
