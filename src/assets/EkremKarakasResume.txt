@@ -1,0 +1,80 @@
+EKREM ARMAGAN KARAKAS
+eakarakas.com | karakas.e@northeastern.edu | +1-857-971-0526 | Boston, Massachusetts
+Available from May 2025 to January 2026
+EDUCATION & ACADEMIC INFORMATION
+Northeastern University Honors Program | B.S in Computer Science – Artificial Intelligence
+May 2026
+• Achievements: Honors Scholarship | Dean’s List | GPA: 3.3/4 | Spring 2023 DKE Athletic Chair
+• Relevant Coursework: Machine Learning and Data Mining, Algorithms & Data Structures, Theory of Computation,
+Object Oriented Programming, Computer Systems, Foundations of Data Science, Foundations of Cybersecurity,
+Introduction to Digital Design and Computer Architecture, Discrete Structures, Mathematics of Data Models
+TECHNICAL SKILLS
+
+• Languages: Python, R, Java, JavaScript, TypeScript, HTML, CSS, C
+• Frameworks / Tools / Databases: NodeJS, ExpressJS, ReactJS, React Native, NextJS, Jest, AWS, Github Actions,
+Docker, Git, Stripe API, LLM API’s, Arduino, Raspberry-PI, MongoDB, MySQL, MariaDB
+
+• Development Environments: Neovim, Visual Studio Code, Jupyter Notebook, Visual Studio, Android Studio,
+Eclipse, Pycharm, IntelliJ
+
+• Operating Systems: Linux, Windows, MacOS
+PROJECTS
+OktetAI – oktetai.com (JavaScript, NodeJS, MongoDB, EJS, AWS)
+Apr. 2024 - Present
+• Developed a platform enabling seamless interaction with multiple advanced AI models (OpenAI, Claude, Gemini,
+Llama) simultaneously while also allowing users to take notes and paraphrase their work.
+• Published LLMRest, a modular AI client, as an NPM package, to manage integrations with multiple AI services,
+ensuring secure API interactions through input validation and content moderation.
+• Designed scalable backend systems using Node.js, Express.js, and MongoDB, incorporating secure authentication
+with Google OAuth, secure email integration with NodeMailer, and payment processing with Stripe. • Deployed
+infrastructure on AWS using EC2, CloudFront, Certificate Manager, and Route53
+Movie Success Prediction Analysis (Python Programming, Machine Learning)
+Nov. – Dec. 2024
+• Designed machine learning pipeline for movie success prediction using Random Forest & Gradient Boosting (94.86%
+accuracy, F1-score: 0.89).
+• Engineered custom features, including profit and success scoring based on vote average, vote count, and
+popularity.
+• Applied SMOTE for class balancing & conducted EDA with matplotlib/seaborn.
+UK Soccer Player Valuation Analysis (Python Programming, Machine Learning)
+Sept. – Dec. 2023
+• Developed a machine learning pipeline to assess the market valuation of UK soccer players. This project involved
+comprehensive data collection, data cleansing, and the application of machine learning techniques.
+• Utilized Random Forest Regression (140 estimators), achieving an R² score of 0.746, outperforming other models
+such as KNN and SVM regressors.
+Reversi Game Development (Java, Unit Testing, MVC Architecture)
+Oct. – Dec. 2023
+• Utilized Java for algorithm design, game development, AI strategy implementation, and unit testing.
+• Engineered a hexagonal-grid based Reversi game model in Java, adhering to standard two-player rules with variable
+grid size capabilities. Implemented model-view-controller architecture; the model managed game state, rules, and
+player interactions, and the view provided text output with scope for future graphical enhancements.
+“The Future is Yours” Book Project (Author)
+Feb. 2019 – Jan. 2022
+• Interviewed 11 leaders, wrote and published a book, used sales revenue to donate medical devices and tablets, and
+received media coverage, including Hurriyet.
+The Safe Election Room Project (Arduino Programming)
+Feb. 2018 – Jan. 2020
+• Designed a secure voting system using barcodes, sensors, and Arduino, featured in Bloomberg and Fortune 40 as a
+potential election solution, and won First Place at the 2019 International ROBORAVE Robotics Competition.
+WORK EXPERIENCE
+Unifirst, Wilmington, MA (IT Co-op | App Development, Scripting, Tech Support)
+July – Dec. 2024
+• Developed IT Quick Links application, a Windows-based utility streamlining access to IT resources, tools, and scripts,
+leveraging PowerShell and WPF.
+• Implemented location-based features, including dynamic server mapping and automated printer
+discovery/installation, by integrating registry lookups, environment variables, and VPN detection.
+• Improved operational efficiency by automating logon scripts, printer setups, and helpdesk task execution, reducing
+manual effort and minimizing configuration errors.
+• Resolved more than 2000 tickets about hardware and software issues.
+KarakaslarGroup, Izmir, Turkey (Full Stack Engineer | PHP, JavaScript, MySQL)
+June – Aug. 2023
+• Developed a custom web-based management system to streamline operations across Karakaslar Group's
+construction projects, enabling efficient approvals, expense tracking, and data entry handling.
+• Implemented role-based access control for distinct account types (managers, employees, accountants) to ensure
+secure and efficient workflows.
+• Designed dynamic search filters, paginated entry listings, and modals for entry management. • Engineered backend
+functionality with object-oriented PHP and MySQL, incorporating PHPMailer for sending automated notifications.
+MobileX, Istanbul, Turkey (Software Engineer Intern)
+July 2020
+• Trained in mobile applications for iOS and Android, gained back-end system experience. Participated in the "Aura
+Dashboard" project, observing database queries and analytics presentation on an interactive dashboard.
+

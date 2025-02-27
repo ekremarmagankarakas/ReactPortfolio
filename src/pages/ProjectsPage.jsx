@@ -34,104 +34,94 @@ const ProjectsPage = () => {
   const projects = [
     {
       id: 1,
-      title: "Groth - Fitness Tracking App",
+      title: "OktetAI - AI Model Hub",
       description:
-        "A fitness app inspired by Fitch that uses a character to symbolize the user's progress. Built with React Native and Node.js.",
-      tags: ["React Native", "TypeScript", "Node.js", "Express.js", "MongoDB"],
+        "A platform enabling seamless interaction with multiple advanced AI models simultaneously while allowing users to take notes and paraphrase their work. Published LLMRest as an NPM package to manage integrations with multiple AI services.",
+      tags: ["JavaScript", "Node.js", "MongoDB", "EJS", "AWS", "Stripe"],
       size: "lg",
-      accentColor: "#EC4899",
-      category: "mobile"
+      accentColor: "#3B82F6",
+      category: "web"
     },
     {
       id: 2,
-      title: "Oktet AI - AI Model Hub",
+      title: "Movie Success Prediction Analysis",
       description:
-        "An AI-powered platform allowing users to interact with multiple AI models for content generation and problem-solving.",
-      tags: ["Node.js", "Express.js", "EJS", "MongoDB", "Stripe", "AWS"],
+        "Designed machine learning pipeline for movie success prediction using Random Forest & Gradient Boosting (94.86% accuracy, F1-score: 0.89). Applied SMOTE for class balancing & conducted EDA with matplotlib/seaborn.",
+      tags: ["Python", "Machine Learning", "Data Science"],
       size: "lg",
-      accentColor: "#3B82F6",
-      category: "web"
+      accentColor: "#10B981",
+      category: "ml"
     },
     {
       id: 3,
-      title: "Personal Portfolio - eakarakas.com",
+      title: "UK Soccer Player Valuation Analysis",
       description:
-        "A portfolio website showcasing projects and skills, built with React and Tailwind for a modern and responsive UI.",
-      tags: ["React", "Tailwind CSS"],
-      size: "sm",
-      accentColor: "#3B82F6",
-      category: "web"
+        "Developed a machine learning pipeline to assess the market valuation of UK soccer players. Utilized Random Forest Regression (140 estimators), achieving an R² score of 0.746, outperforming other models.",
+      tags: ["Python", "Machine Learning", "Data Analysis"],
+      size: "md",
+      accentColor: "#10B981",
+      category: "ml"
     },
     {
       id: 4,
-      title: "UK Soccer Player Valuation Model",
+      title: "Reversi Game Development",
       description:
-        "Machine learning model predicting soccer player market values based on performance metrics and historical data.",
-      tags: ["Python", "Machine Learning"],
+        "Engineered a hexagonal-grid based Reversi game model in Java, adhering to standard two-player rules with variable grid size capabilities. Implemented model-view-controller architecture.",
+      tags: ["Java", "Unit Testing", "MVC Architecture"],
       size: "md",
-      accentColor: "#10B981",
-      category: "ml"
+      accentColor: "#F59E0B",
+      category: "game"
     },
     {
       id: 5,
-      title: "Diabetes Prediction Model",
+      title: "The Future is Yours - Book Project",
       description:
-        "Analyzed a medical dataset to predict diabetes presence using statistical methods and machine learning.",
-      tags: ["Python", "Data Science", "ML"],
+        "Interviewed 11 leaders, wrote and published a book, used sales revenue to donate medical devices and tablets, and received media coverage, including Hurriyet.",
+      tags: ["Writing", "Community Impact", "Leadership"],
       size: "md",
-      accentColor: "#10B981",
-      category: "ml"
-    },
-    {
-      id: 6,
-      title: "Green Taxi Trip Analysis",
-      description:
-        "Developed a Random Forest model to predict NYC taxi trip tips based on ride characteristics.",
-      tags: ["Python", "Machine Learning"],
-      size: "sm",
-      accentColor: "#10B981",
-      category: "ml"
-    },
-    {
-      id: 7,
-      title: "Reversi Game AI",
-      description:
-        "Implemented an AI-powered Reversi game with strategic algorithms and an interactive Java-based interface.",
-      tags: ["Java", "Unit Testing"],
-      size: "sm",
-      accentColor: "#F59E0B",
-      category: "game"
-    },
-    {
-      id: 8,
-      title: "Klondike Solitaire Game",
-      description:
-        "Developed a console-based Klondike Solitaire game with multiple game variants and robust MVC architecture.",
-      tags: ["Java", "Unit Testing", "Game Dev"],
-      size: "sm",
-      accentColor: "#F59E0B",
-      category: "game"
-    },
-    {
-      id: 9,
-      title: "The Future is Yours - Published Book",
-      description:
-        "Published a book after interviewing 11 community and business leaders, funding educational initiatives.",
-      tags: ["Writing", "Community Impact"],
-      size: "sm",
       accentColor: "#3B82F6",
       category: "web"
     },
     {
-      id: 10,
-      title: "Safe Election Room (Robotics Competition Winner)",
+      id: 6,
+      title: "Safe Election Room Project",
       description:
-        "Designed an innovative voting security system with Arduino and barcode authentication. Won First Place in the ROBOAVE competition.",
-      tags: ["Arduino", "Security", "Robotics"],
+        "Designed a secure voting system using barcodes, sensors, and Arduino, featured in Bloomberg and Fortune 40 as a potential election solution. Won First Place at the 2019 International ROBORAVE Robotics Competition.",
+      tags: ["Arduino", "Security", "Robotics", "Electronics"],
       size: "lg",
       accentColor: "#8B5CF6",
       category: "hardware"
     },
+    {
+      id: 7,
+      title: "IT Quick Links Application",
+      description:
+        "Developed a Windows-based utility streamlining access to IT resources, tools, and scripts using PowerShell and WPF. Implemented location-based features including dynamic server mapping and automated printer discovery.",
+      tags: ["PowerShell", "WPF", "Windows", "Automation"],
+      size: "md",
+      accentColor: "#EC4899",
+      category: "mobile"
+    },
+    {
+      id: 8,
+      title: "Construction Management System",
+      description:
+        "Developed a custom web-based management system to streamline operations across construction projects, enabling efficient approvals, expense tracking, and data entry handling with role-based access control.",
+      tags: ["PHP", "JavaScript", "MySQL", "Web Development"],
+      size: "md",
+      accentColor: "#3B82F6",
+      category: "web"
+    },
+    {
+      id: 9,
+      title: "Personal Portfolio - eakarakas.com",
+      description:
+        "A portfolio website showcasing projects and skills, built with React and Tailwind CSS for a modern and responsive UI.",
+      tags: ["React", "Tailwind CSS", "JavaScript"],
+      size: "sm",
+      accentColor: "#3B82F6",
+      category: "web"
+    }
   ];
 
   const getSizeClass = (size) => {

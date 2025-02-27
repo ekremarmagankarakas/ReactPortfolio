@@ -4,57 +4,73 @@ import '../App.css';
 
 // Company logo icons/emojis
 const companyIcons = {
-  'Tech Solutions Inc.': '🚀',
-  'Digital Agency': '🎨',
-  'Startup Hub': '💡',
-  'Google': '🔍',
-  'Microsoft': '🪟',
-  'Apple': '🍎'
+  'Unifirst': '👔',
+  'KarakaslarGroup': '🏗️',
+  'MobileX': '📱',
+  'Northeastern University': '🎓'
 };
 
 const ExperiencePage = () => {
   const experiences = [
     {
-      title: 'Senior Frontend Developer',
-      company: 'Tech Solutions Inc.',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
-      description: 'Lead frontend development for enterprise applications using React and modern JavaScript frameworks. Implemented state-of-the-art CI/CD pipelines to improve deployment efficiency by 40%. Mentored junior developers and established coding standards used across the organization.',
+      title: 'IT Co-op',
+      company: 'Unifirst',
+      location: 'Wilmington, MA',
+      period: 'July - Dec. 2024',
+      description: 'Developed IT Quick Links application, a Windows-based utility streamlining access to IT resources, tools, and scripts, leveraging PowerShell and WPF. Implemented location-based features and automated helpdesk tasks.',
       achievements: [
-        'Reduced application load time by 35% through code optimization',
-        'Led the migration from class components to functional components with hooks',
-        'Implemented micro-frontend architecture for better scalability'
+        'Developed Windows-based utility streamlining access to IT resources and tools',
+        'Implemented location-based features, including dynamic server mapping and automated printer discovery',
+        'Improved operational efficiency by automating logon scripts and printer setups',
+        'Resolved more than 2000 tickets about hardware and software issues'
       ],
-      skills: ['React', 'TypeScript', 'Redux', 'GraphQL', 'Jest', 'Tailwind CSS'],
+      skills: ['PowerShell', 'WPF', 'Windows', 'Automation', 'IT Support', 'Scripting'],
       color: '#3b82f6'
     },
     {
-      title: 'Web Developer',
-      company: 'Digital Agency',
-      location: 'Boston, MA',
-      period: '2019 - 2022',
-      description: 'Developed responsive websites and e-commerce platforms for various clients using React and Node.js. Collaborated with designers to implement pixel-perfect UIs while ensuring accessibility standards were met.',
+      title: 'Full Stack Engineer',
+      company: 'KarakaslarGroup',
+      location: 'Izmir, Turkey',
+      period: 'June - Aug. 2023',
+      description: 'Developed a custom web-based management system to streamline operations across construction projects, enabling efficient approvals, expense tracking, and data entry handling with role-based access control.',
       achievements: [
-        'Built a headless CMS solution that increased content creation efficiency by 50%',
-        'Implemented complex animations and micro-interactions to enhance user engagement',
-        'Created reusable component libraries that reduced development time by 30%'
+        'Developed a custom web-based management system for construction project operations',
+        'Implemented role-based access control for distinct account types',
+        'Designed dynamic search filters, paginated entry listings, and modals for entry management',
+        'Engineered backend functionality with object-oriented PHP and MySQL'
       ],
-      skills: ['React', 'Node.js', 'Express', 'MongoDB', 'Styled Components', 'Webpack'],
+      skills: ['PHP', 'JavaScript', 'MySQL', 'Object-Oriented Programming', 'PHPMailer', 'Web Development'],
       color: '#60a5fa'
     },
     {
-      title: 'Junior Developer',
-      company: 'Startup Hub',
-      location: 'Austin, TX',
-      period: '2017 - 2019',
-      description: 'Collaborated in a fast-paced environment to build MVPs and web applications using JavaScript and React. Worked with cross-functional teams to deliver projects on tight deadlines.',
+      title: 'Software Engineer Intern',
+      company: 'MobileX',
+      location: 'Istanbul, Turkey',
+      period: 'July 2020',
+      description: 'Trained in mobile applications for iOS and Android, gained back-end system experience. Participated in the "Aura Dashboard" project, observing database queries and analytics presentation.',
       achievements: [
-        'Implemented front-end features for a SaaS platform with 10k+ active users',
-        'Learned and adapted to new technologies and frameworks as project needs evolved',
-        'Contributed to open-source libraries used in the organization'
+        'Received training in mobile applications development for iOS and Android',
+        'Gained back-end system experience and worked with databases',
+        'Participated in the "Aura Dashboard" project for analytics',
+        'Learned about database queries and visualization techniques'
       ],
-      skills: ['JavaScript', 'React', 'HTML', 'CSS', 'Git', 'Bootstrap'],
+      skills: ['Mobile Development', 'Database', 'Analytics', 'iOS', 'Android'],
       color: '#a78bfa'
+    },
+    {
+      title: 'Computer Science - AI Major',
+      company: 'Northeastern University',
+      location: 'Boston, MA',
+      period: 'Expected May 2026',
+      description: 'BS in Computer Science with a focus on Artificial Intelligence. Member of the Honors Program with a 3.3/4.0 GPA. Spring 2023 DKE Athletic Chair.',
+      achievements: [
+        'Honors Scholarship recipient and Dean\'s List',
+        'Coursework in Machine Learning, Data Mining, Algorithms & Data Structures',
+        'Studied Theory of Computation, Object Oriented Programming, Computer Systems',
+        'Foundations of Data Science, Cybersecurity, Digital Design and Computer Architecture'
+      ],
+      skills: ['Machine Learning', 'Data Mining', 'Algorithms', 'Data Structures', 'Object Oriented Programming'],
+      color: '#10B981'
     }
   ];
 

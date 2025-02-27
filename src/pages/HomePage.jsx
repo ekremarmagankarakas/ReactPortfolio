@@ -108,7 +108,7 @@ const HomePage = () => {
             <span className="fa fa-linkedin"></span>
           </a>
           <a
-            href="mailto:example@email.com"
+            href="mailto:ekremarmagankarakas@gmail.com"
             className="social-icon-link"
             aria-label="Email"
           >

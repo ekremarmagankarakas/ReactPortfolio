@@ -4,88 +4,125 @@ import '../App.css';
 
 // Icons mapping for skills
 const skillIcons = {
+  // Languages
+  'Python': '🐍',
+  'Java': '☕',
+  'JavaScript': '𝗝𝗦',
+  'TypeScript': '📘',
+  'HTML/CSS': '🌐',
+  'C': '⚙️',
+  'R': '📊',
+  
   // Frontend
   'React': '⚛️',
-  'JavaScript': '𝗝𝗦',
-  'HTML/CSS': '🌐',
+  'Next.js': '▲',
+  'React Native': '📱',
   'Tailwind CSS': '🌊',
   
   // Backend
   'Node.js': '📦',
-  'Express': '🚂',
+  'Express.js': '🚂',
   'MongoDB': '🍃',
-  'SQL': '🗄️',
+  'MySQL': '🗄️',
+  'MariaDB': '🗂️',
   
-  // Tools
+  // Tools & DevOps
   'Git': '📝',
-  'Figma': '🎨',
-  'VS Code': '💻',
   'Docker': '🐳',
+  'AWS': '☁️',
+  'GitHub Actions': '🔄',
+  'Stripe API': '💳',
+  'LLM APIs': '🤖',
   
-  // Languages
-  'Python': '🐍',
-  'Java': '☕',
-  'TypeScript': '📘',
-  'C': '⚙️',
-  'R': '📊',
-
+  // Development Environments
+  'VS Code': '💻',
+  'Neovim': '🔮',
+  'Jupyter Notebook': '📓',
+  'IntelliJ/PyCharm': '🧠',
+  
   // Operating Systems
   'Linux': '🐧',
   'Windows': '🪟',
   'macOS': '🍎',
+  
+  // Hardware
+  'Arduino': '🔌',
+  'Raspberry Pi': '🍓',
 };
 
 const SkillsPage = () => {
   const skillCategories = [
     {
+      category: 'Languages',
+      icon: '📝',
+      skills: [
+        { name: 'Python', level: 90 },
+        { name: 'Java', level: 85 },
+        { name: 'JavaScript', level: 85 },
+        { name: 'TypeScript', level: 80 },
+        { name: 'HTML/CSS', level: 85 },
+        { name: 'R', level: 75 },
+        { name: 'C', level: 70 },
+      ]
+    },
+    {
       category: 'Frontend',
       icon: '🎨',
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'JavaScript', level: 85 },
-        { name: 'HTML/CSS', level: 95 },
-        { name: 'Tailwind CSS', level: 80 },
+        { name: 'React', level: 85 },
+        { name: 'Next.js', level: 80 },
+        { name: 'React Native', level: 75 },
+        { name: 'Tailwind CSS', level: 85 },
       ]
     },
     {
       category: 'Backend',
       icon: '⚙️',
       skills: [
-        { name: 'Node.js', level: 75 },
-        { name: 'Express', level: 70 },
-        { name: 'MongoDB', level: 65 },
-        { name: 'SQL', level: 60 },
+        { name: 'Node.js', level: 85 },
+        { name: 'Express.js', level: 85 },
+        { name: 'MongoDB', level: 80 },
+        { name: 'MySQL', level: 75 },
+        { name: 'MariaDB', level: 75 },
       ]
     },
     {
-      category: 'Tools',
+      category: 'Tools & DevOps',
       icon: '🛠️',
       skills: [
-        { name: 'Git', level: 85 },
-        { name: 'Figma', level: 70 },
-        { name: 'VS Code', level: 90 },
-        { name: 'Docker', level: 60 },
+        { name: 'Git', level: 90 },
+        { name: 'Docker', level: 75 },
+        { name: 'AWS', level: 70 },
+        { name: 'GitHub Actions', level: 70 },
+        { name: 'Stripe API', level: 75 },
+        { name: 'LLM APIs', level: 85 },
       ]
     },
     {
-      category: 'Languages',
-      icon: '📝',
+      category: 'Development Environments',
+      icon: '💻',
       skills: [
-        { name: 'Python', level: 85 },
-        { name: 'Java', level: 70 },
-        { name: 'JavaScript', level: 90 },
-        { name: 'TypeScript', level: 60 },
-        { name: 'C', level: 60 },
-        { name: 'R', level: 60 },
+        { name: 'VS Code', level: 90 },
+        { name: 'Neovim', level: 85 },
+        { name: 'Jupyter Notebook', level: 80 },
+        { name: 'IntelliJ/PyCharm', level: 75 },
       ]
     },
     {
       category: 'Operating Systems',
-      icon: '💻',
+      icon: '🖥️',
       skills: [
         { name: 'Linux', level: 85 },
         { name: 'Windows', level: 90 },
         { name: 'macOS', level: 75 },
+      ]
+    },
+    {
+      category: 'Hardware',
+      icon: '🔌',
+      skills: [
+        { name: 'Arduino', level: 75 },
+        { name: 'Raspberry Pi', level: 70 },
       ]
     }
   ];
