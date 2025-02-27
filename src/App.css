@@ -103,6 +103,43 @@
   --z-content: 10;
 }
 
+/* Dark mode styles */
+.dark-mode {
+  /* Colors */
+  --color-bg1: rgb(30, 0, 60);
+  --color-bg2: rgb(0, 5, 25);
+  --color-bg: #050505;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #d1d5db;
+  --color-text-tertiary: #9ca3af;
+  --color-text-accent: #3b82f6;
+  --color-border-light: rgba(55, 65, 81, 0.2);
+  --color-border-medium: rgba(55, 65, 81, 0.3);
+
+  /* Gradients */
+  --color1: 20, 60, 150;        /* Darker Blue */
+  --color2: 100, 30, 150;       /* Darker Purple-Pink */
+  --color3: 30, 100, 150;       /* Darker Cyan */
+  --color4: 150, 30, 30;        /* Darker Red */
+  --color5: 150, 130, 30;       /* Darker Yellow */
+  --color-interactive: 80, 60, 150; /* Darker Interactive Blue */
+  --gradient-primary: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+  --gradient-accent: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  --gradient-timeline: linear-gradient(to bottom, rgba(59, 130, 246, 0.4), rgba(96, 165, 250, 0.2));
+
+  /* Background styles */
+  --bg-card: rgba(10, 15, 25, 0.5);
+  --bg-card-lighter: rgba(12, 18, 28, 0.45);
+  --bg-card-darker: rgba(5, 10, 18, 0.5);
+  --bg-dock: rgba(10, 15, 25, 0.7);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.18);
+  --shadow-glow: 0 0 12px rgba(59, 130, 246, 0.15);
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -116,6 +153,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .app-container {
@@ -255,7 +293,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 var(--space-2);
-  transition: var(--transition-fast);
+  transition: var(--transition-fast), color 0.5s ease;
   color: var(--color-text-tertiary);
   background: none;
   border: none;

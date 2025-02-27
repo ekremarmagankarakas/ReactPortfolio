@@ -1,0 +1,7 @@
+s3 bucket to deploy
+update home page
+update all the projects info, maybe images
+update skills info
+update experiences info
+dark mode - better colors
+projects - color coding for different types of projects - add buttons for filtering

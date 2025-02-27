@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import '../App.css';
+import { ThemeContext } from '../App';
 
 const Dock = ({ activeSection, setActiveSection }) => {
+  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
+  
   const sections = [
     { id: 'home', icon: '🏠', label: 'Home' },
     { id: 'projects', icon: '🔧', label: 'Projects' },
@@ -31,6 +34,17 @@ const Dock = ({ activeSection, setActiveSection }) => {
             </button>
           );
         })}
+        
+        {/* Theme toggle button */}
+        <button
+          className="dock-item"
+          onClick={toggleDarkMode}
+          onMouseEnter={() => setHoveredItem('theme')}
+          onMouseLeave={() => setHoveredItem(null)}
+        >
+          <div className="icon">{darkMode ? '☀️' : '🌙'}</div>
+          <div className="label">{darkMode ? 'Light' : 'Dark'}</div>
+        </button>
       </div>
     </div>
   );
